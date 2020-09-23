@@ -16,6 +16,7 @@ gem 'slim-rails'
 gem 'html2slim'
 
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-rails'
 end
