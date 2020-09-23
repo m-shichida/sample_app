@@ -1,0 +1,38 @@
+.users
+  p#notice
+    = notice
+  h1
+    | Users
+  table
+    thead
+      tr
+        th
+          | Name
+        th
+          | Email
+        th
+          | Age
+        th
+          | Address
+        th[colspan="3"]
+    tbody
+      - @users.each do |user|
+        tr
+          td
+            = user.name
+          td
+            = user.email
+          td
+            = user.age
+          td
+            = user.address
+          td
+            = link_to 'Show', user
+          td
+            = link_to 'Edit', edit_user_path(user)
+          td
+            = link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }
+  br
+  = link_to 'New User', new_user_path
+
+  = link_to '出力する', output_sheet_users_path(@users), class: 'mt8 button-success'
