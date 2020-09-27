@@ -59,6 +59,7 @@ jobs:
           command: |
             cp ./.env.test ./.env
             cp ./config/database.yml.ci ./config/database.yml
+            gem install bundler:2.1.4
             bundle --path vendor/bundle
             bundle exec rake db:create db:schema:load db:migrate
       - run:
