@@ -15,6 +15,13 @@ gem 'rubyXL'
 gem 'slim-rails'
 gem 'html2slim'
 
+# oauth2による認証のため必要
+gem 'omniauth'
+gem 'omniauth-oauth2'
+gem 'oauth2'
+gem 'faraday'
+gem 'faraday_middleware'
+
 group :development, :test do
   gem 'dotenv-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
