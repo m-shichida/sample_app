@@ -2,6 +2,7 @@ ja:
   activerecord:
     models:
       event: イベント
+      ticket: チケット
     attributes:
       event:
         name: 名前
@@ -9,3 +10,19 @@ ja:
         start_at: 開始時間
         end_at: 終了時間
         content: 内容
+      ticket:
+        comment: コメント
+
+  welcome:
+    index:
+      events: イベント一覧
+  events:
+    new:
+      page_title: イベント作成
+    edit:
+      page_title: イベント情報編集
+    show:
+      content: イベント内容
+      held_at: 開催時間
+      place: 開催場所
+      owner: 主催者
